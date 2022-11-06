@@ -23,12 +23,12 @@ export default {
       const symbol = "▲";
       const emptySymbol = "_";
 
-      for (let I = 0; I < this.count; I++) {
+      for (let I = 0; I <= this.count; I++) {
         result += "<p>";
         for (let J = this.count; J > I; J--) {
           result += emptySymbol;
         }
-        for (let J = 0; J < I; J++) {
+        for (let J = 0; J <= I; J++) {
           result += symbol;
         }
         result += "</p>";
